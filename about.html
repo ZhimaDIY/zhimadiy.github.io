@@ -1,0 +1,77 @@
+<html>
+
+<head>
+<title>管家</title>
+<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0,viewport-fit=cover">
+ 
+ <!-- WEUI CSS -->
+    <link rel="stylesheet" href="https://cdn.bootcss.com/weui/1.1.2/style/weui.css" >
+    <link rel="stylesheet" href="https://cdn.bootcss.com/weui/1.1.2/style/weui.min.css" >
+</head>
+
+<body>
+<div>
+<div>
+	 <div class="weui-tab">
+     <div class="weui-tab__panel">
+        <br>
+        <div class="main_icon" style="text-align: center;"><img src="./images/weui_icon.png"></div>
+        <div style="text-align: center;">
+            <a>预约助手 V0.0.1</a>
+        <div></div>
+    </div>
+    <div class="weui-panel weui-panel_access">
+    <div class="weui-panel__hd">关于我们</div>
+    <div class="weui-panel__bd">
+        <div class="weui-media-box weui-media-box_text">
+            <h4 class="weui-media-box__title">我们的地址</h4>
+            <p class="weui-media-box__desc">武汉市洪山区雄楚大道小何村3号</p>
+        </div>
+        <div class="weui-media-box weui-media-box_text">
+            <h4 class="weui-media-box__title">客服联系电话</h4>
+            <p class="weui-media-box__desc">请拨打手机：13336179148</p>
+        </div>
+        <div class="weui-media-box weui-media-box_text">
+            <h4 class="weui-media-box__title">投诉建议</h4>
+            <p class="weui-media-box__desc">请在公众号留言或者加客服微信：13336179148</p>
+        </div>
+    </div>
+    </div><br>
+    <div class="weui-footer">
+    <p class="weui-footer__links">
+        <a href="javascript:void(0);" class="weui-footer__link">官方网站</a>
+    </p>
+    <p class="weui-footer__text">Copyright &copy; 2017-2018 爱我家政</p>
+    
+    </div>
+    <div class="weui-tabbar">
+        <a href="javascript:window.location.href='index.html';" class="weui-tabbar__item ">
+            <img src="./images/icon_info.png" alt="" class="weui-tabbar__icon">
+            <p class="weui-tabbar__label">资讯</p>
+        </a>
+        <a href="serve.html" class="weui-tabbar__item">
+            <img src="./images/icon_serve.png" alt="" class="weui-tabbar__icon">
+            <p class="weui-tabbar__label">预约</p>
+        </a>
+        <a href="javascript:window.location.href='about.html;" class="weui-tabbar__item weui-bar__item_on">
+            <img src="./images/icon_about.png" alt="" class="weui-tabbar__icon">
+            <p class="weui-tabbar__label">我</p>
+        </a>
+    </div>
+</div>
+</div>
+</body>
+
+    <script src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js  "></script>
+    <script src="http://cdn.bootcss.com/bootstrap/3.3.0/js/bootstrap.min.js  "></script>
+    
+<script type="text/javascript">
+    $(function(){
+        $('.weui-tabbar__item').on('click', function () {
+            $(this).addClass('weui-bar__item_on').siblings('.weui-bar__item_on').removeClass('weui-bar__item_on');
+        });
+    });
+</script>
+
+</html>
